@@ -259,7 +259,11 @@ color:#f1c200;
 ul.navbar {
   /*background: #fff; */
 }
-
+/*.navbar ul {
+    display: flex!important;
+    flex-direction: column !important;
+    flex-wrap: wrap;
+}*/
 ul.navbar li {
     float: left;
     margin: 0;
@@ -272,7 +276,7 @@ ul.navbar li a {
     color: #fff !important;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all .2s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 ul.navbar li a:hover,
@@ -284,10 +288,11 @@ ul.navbar li:hover > a {
 ul.navbar li ul {
   margin: 0;
   position: absolute;
-  background: #222;
+  background: rgb(23, 50, 82);
+  background: rgb(50, 66, 84);
   left: 10%;
   font-size: 10px;
-  min-width: 180px;
+  min-width: 190px;
   opacity: 0;
   visibility: hidden;
   z-index: 99;
@@ -295,14 +300,20 @@ ul.navbar li ul {
 }
 
 ul.navbar ul li { float: none; }
-ul.navbar li:hover > ul { opacity: 1; visibility: visible; left: 0; max-height: 250px }
+ul.navbar li:hover > ul { opacity: 1; visibility: visible; left: 0; max-height: 350px }
 ul.navbar > li:hover > ul { opacity: 1; visibility: visible; top: 100%; left: 0; }
 ul.navbar li > ul  ul { top: 0; left: 90%; }
 ul.navbar li > ul li:hover > ul { left: 100%; }
 
 /*===========================================*/
 
-
+.product {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.product_wrap {
+    margin-top: 20px;
+}
 
 .main_title{
      /*font-family: 'Open Sans', sans-serif;*/
